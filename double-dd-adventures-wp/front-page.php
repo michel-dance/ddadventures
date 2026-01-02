@@ -1,0 +1,432 @@
+<?php
+/**
+ * Front page template for Double DD Adventures.
+ */
+
+get_header();
+$media_base = esc_url(dda_media_base_url());
+$reviews_link = esc_url(home_url('/reviews/'));
+?>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-headline">
+        <span class="kicker">Aruba private charter days</span>
+        <h1>Aruba sunset cruises, sandbar hangs, fishing lessons, and party-perfect memories.</h1>
+        <p class="lead">Launch from Aruba with a polished crew, clean boat, and an itinerary that flexes with your group—families, couples, and bachelorette squads included.</p>
+        <div class="hero-actions">
+          <a class="button" href="https://wa.me/2976613950" target="_blank" rel="noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.672.15-.197.297-.77.966-.944 1.164-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.173.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.148-.672-1.611-.92-2.209-.242-.579-.487-.5-.672-.51l-.576-.01c-.198 0-.52.074-.793.372-.273.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.718 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.273-.198-.571-.347m-5.421 5.451h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.517-5.23c.002-5.45 4.436-9.884 9.888-9.884 2.64.001 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.9 6.994c-.002 5.45-4.436 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.158 11.89c0 2.096.547 4.14 1.588 5.945L0 24l6.305-1.654a11.86 11.86 0 0 0 5.733 1.463h.005c6.554 0 11.89-5.335 11.892-11.89a11.821 11.821 0 0 0-3.48-8.428"/></svg>
+            WhatsApp booking
+          </a>
+          <a class="button-ghost" href="https://www.instagram.com/double_dd_adventures/" target="_blank" rel="noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.35 3.608 1.325.975.975 1.262 2.242 1.324 3.608.058 1.266.069 1.646.069 4.85s-.011 3.584-.069 4.85c-.062 1.366-.35 2.633-1.324 3.608-.975.975-2.242 1.262-3.608 1.324-1.266.058-1.646.069-4.85.069s-3.584-.011-4.85-.069c-1.366-.062-2.633-.35-3.608-1.324-.975-.975-1.262-2.242-1.324-3.608C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.062-1.366.35-2.633 1.324-3.608.975-.975 2.242-1.262 3.608-1.324C8.416 2.175 8.796 2.163 12 2.163m0-2.163C8.741 0 8.332.014 7.052.072 5.775.13 4.638.428 3.678 1.388 2.718 2.347 2.42 3.484 2.362 4.761 2.304 6.041 2.29 6.45 2.29 12c0 5.55.014 5.959.072 7.239.058 1.277.356 2.414 1.316 3.373.96.96 2.097 1.258 3.373 1.316 1.28.058 1.689.072 7.239.072s5.959-.014 7.239-.072c1.277-.058 2.414-.356 3.373-1.316.96-.96 1.258-2.097 1.316-3.373.058-1.28.072-1.689.072-7.239s-.014-5.959-.072-7.239c-.058-1.277-.356-2.414-1.316-3.373-.96-.96-2.097-1.258-3.373-1.316C15.959.014 15.55 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 1 0-2.881 1.44 1.44 0 0 1 0 2.881z"/></svg>
+            Instagram DM
+          </a>
+          <a class="button-ghost" href="<?php echo $reviews_link; ?>">Guest reviews</a>
+        </div>
+        <div class="hero-meta">
+          <div class="badge-card">
+            <strong>⭐ Superior boat quality</strong>
+            <span class="subtle-text">Clean decks, shaded lounge, Bluetooth tunes, ice-filled coolers.</span>
+          </div>
+          <div class="badge-card">
+            <strong>💰 Affordable pricing</strong>
+            <span class="subtle-text">Transparent packages for half-day, full-day, and golden hour trips.</span>
+          </div>
+          <div class="badge-card">
+            <strong>🛟 Guaranteed security</strong>
+            <span class="subtle-text">Licensed captain, USCG safety gear, and local knowledge of the tides.</span>
+          </div>
+          <div class="badge-card">
+            <strong>📸 Ready for content</strong>
+            <span class="subtle-text">We know the angles and sandbars that make your feed pop.</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="panel">
+          <img src="<?php echo $media_base; ?>overhead-front-shot-of-boat-with-people.jpg" alt="Overhead shot of the boat and guests cruising">
+          <div class="chips">
+            <span class="chip">Sandbar days</span>
+            <span class="chip">Sunset + champagne</span>
+            <span class="chip">Family-safe snorkeling</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="wrap">
+      <div class="section-header">
+        <div>
+          <h2>Pick an experience</h2>
+          <p>Swipe through each category. We weave a fresh guest review between every section.</p>
+        </div>
+        <a class="button-ghost" href="<?php echo $reviews_link; ?>">All guest screenshots</a>
+      </div>
+      <div id="category-sections"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="category-card" aria-labelledby="seo-heading">
+        <div class="category-top">
+          <div class="category-title">
+            <span class="category-pill" style="background: var(--accent-2);"></span>
+            <h3 id="seo-heading">Aruba-ready boat days</h3>
+          </div>
+          <span>Sunsets · Snorkeling · Families · Parties</span>
+        </div>
+        <p class="subtle-text" style="margin: 0 0 6px;">Plan your Aruba vacation around calm-water snorkeling, sunset champagne cruises, family-safe fishing lessons, and bachelorette-friendly playlists. We sail from Aruba with a licensed captain, safety gear, ice, and Bluetooth tunes ready for guests from the US, Europe, and Latin America.</p>
+        <div class="chips">
+          <span class="chip">Aruba private boat charter</span>
+          <span class="chip">Sunset cruise Aruba</span>
+          <span class="chip">Snorkeling tour Aruba</span>
+          <span class="chip">Family friendly</span>
+          <span class="chip">Bachelorette & parties</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="cta-card">
+        <div>
+          <h3 style="margin: 0 0 6px">Ready to book the boat?</h3>
+          <p class="subtle-text" style="margin: 0">Choose your category above, then share your dates, headcount, and must-see stops. We'll lock in the plan and keep you cruising.</p>
+        </div>
+        <div class="hero-actions">
+          <a class="button" href="https://wa.me/2976613950" target="_blank" rel="noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.672.15-.197.297-.77.966-.944 1.164-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.173.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.148-.672-1.611-.92-2.209-.242-.579-.487-.5-.672-.51l-.576-.01c-.198 0-.52.074-.793.372-.273.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.718 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.273-.198-.571-.347m-5.421 5.451h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.517-5.23c.002-5.45 4.436-9.884 9.888-9.884 2.64.001 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.9 6.994c-.002 5.45-4.436 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.158 11.89c0 2.096.547 4.14 1.588 5.945L0 24l6.305-1.654a11.86 11.86 0 0 0 5.733 1.463h.005c6.554 0 11.89-5.335 11.892-11.89a11.821 11.821 0 0 0-3.48-8.428"/></svg>
+            WhatsApp booking
+          </a>
+          <a class="button-ghost" href="https://www.instagram.com/double_dd_adventures/" target="_blank" rel="noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.35 3.608 1.325.975.975 1.262 2.242 1.324 3.608.058 1.266.069 1.646.069 4.85s-.011 3.584-.069 4.85c-.062 1.366-.35 2.633-1.324 3.608-.975.975-2.242 1.262-3.608 1.324-1.266.058-1.646.069-4.85.069s-3.584-.011-4.85-.069c-1.366-.062-2.633-.35-3.608-1.324-.975-.975-1.262-2.242-1.324-3.608C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.062-1.366.35-2.633 1.324-3.608.975-.975 2.242-1.262 3.608-1.324C8.416 2.175 8.796 2.163 12 2.163m0-2.163C8.741 0 8.332.014 7.052.072 5.775.13 4.638.428 3.678 1.388 2.718 2.347 2.42 3.484 2.362 4.761 2.304 6.041 2.29 6.45 2.29 12c0 5.55.014 5.959.072 7.239.058 1.277.356 2.414 1.316 3.373.96.96 2.097 1.258 3.373 1.316 1.28.058 1.689.072 7.239.072s5.959-.014 7.239-.072c1.277-.058 2.414-.356 3.373-1.316.96-.96 1.258-2.097 1.316-3.373.058-1.28.072-1.689.072-7.239s-.014-5.959-.072-7.239c-.058-1.277-.356-2.414-1.316-3.373-.96-.96-2.097-1.258-3.373-1.316C15.959.014 15.55 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 1 0-2.881 1.44 1.44 0 0 1 0 2.881z"/></svg>
+            Instagram DM
+          </a>
+          <a class="button-ghost" href="<?php echo $reviews_link; ?>">See guest proof</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+  const mediaBase = "<?php echo $media_base; ?>";
+  const mediaSrc = (path) => path.startsWith('http') ? path : (path.startsWith('photos/') ? mediaBase + path.replace(/^photos\\//, '') : mediaBase + path);
+  const categories = [
+    {
+      id: 'sunsets',
+      title: 'Sunsets',
+      tagline: 'Golden-hour cruises and candid sunset moments.',
+      accent: 'var(--accent-2)',
+      media: [
+        { type: 'image', src: 'photos/stuning-boat-sunsets.jpg', alt: 'Boat gliding during a vivid sunset' },
+        { type: 'image', src: 'photos/stunning-sunset-side-shot-boat.jpg', alt: 'Side view of the boat with a dramatic sky' },
+        { type: 'image', src: 'photos/sunset-from-boat.jpg', alt: 'Sunset view from the boat rail' },
+        { type: 'image', src: 'photos/boat-with-sunset-behind-it.jpg', alt: 'Boat framed by a glowing sun' },
+        { type: 'image', src: 'photos/woman-posing-on-boat-with-sunset.jpg', alt: 'Guest posing with a sunset backdrop' },
+        { type: 'image', src: 'photos/sunset-from-boat-side.jpg', alt: 'Pastel sky beside the boat' },
+        { type: 'image', src: 'photos/sunset-from-boat-front.jpg', alt: 'Front-row view of the sunset from the bow' },
+        { type: 'image', src: 'photos/another-happy-familhy-at-sunset.jpg', alt: 'Family smiling together at sunset' }
+      ]
+    },
+    {
+      id: 'family',
+      title: 'Family',
+      tagline: 'Kid-friendly trips with calm water stops.',
+      accent: 'var(--accent)',
+      media: [
+        { type: 'image', src: 'photos/family-posing-onboat-with-snroker-gear.jpg', alt: 'Family on the boat with snorkel gear' },
+        { type: 'image', src: 'photos/father-watching-kids-swim-from-boat.jpg', alt: 'Dad watching kids swim beside the boat' },
+        { type: 'image', src: 'photos/happy-family-posing-at-sunset.jpg', alt: 'Family sunset portrait on the water' },
+        { type: 'image', src: 'photos/happy-family-posing-at-sunset2.jpg', alt: 'Second family sunset portrait' },
+        { type: 'image', src: 'photos/happy-father-throwing-child-into-water.jpg', alt: 'Dad safely tossing a child into the water' },
+        { type: 'image', src: 'photos/happy-baby-on-boat.jpg', alt: 'Happy baby on the boat' },
+        { type: 'image', src: 'photos/cute-mom-with-babies-in-water.jpg', alt: 'Mom with babies enjoying the water' },
+        { type: 'image', src: 'photos/gorgeous-powerful-happy-mom-with-babies.jpg', alt: 'Mom flexing with kids aboard' },
+        { type: 'image', src: 'photos/father-son-posing-on-boat.jpg', alt: 'Father and son posing on the deck' }
+      ]
+    },
+    {
+      id: 'snorkeling',
+      title: 'Snorkeling',
+      tagline: 'Anchor in clear, shallow water with easy ladder access.',
+      accent: '#38bdf8',
+      media: [
+        { type: 'image', src: 'photos/clear-swiming-water.jpg', alt: 'Crystal clear water ready for snorkeling' },
+        { type: 'image', src: 'photos/happy-friends-posing-in-clear-water.jpg', alt: 'Friends floating together in clear water' },
+        { type: 'image', src: 'photos/happy-group-of-friend-chilling.jpg', alt: 'Group relaxing in the shallows' },
+        { type: 'image', src: 'photos/young-friend-on-floaty.jpg', alt: 'Guest lounging on a floaty' },
+        { type: 'image', src: 'photos/couple-in-water-with-floaty.jpg', alt: 'Couple relaxing in the water with a float' },
+        { type: 'video', src: 'photos/child-jumping-from-boat.mp4', alt: 'Kid jumping off the boat' },
+        { type: 'image', src: 'photos/father-watching-kids-swim-from-boat.jpg', alt: 'Watching swimmers from the boat' },
+        { type: 'video', src: 'photos/VID-20251209-WA0021.mp4', alt: 'Guests snorkeling around the boat' }
+      ]
+    },
+    {
+      id: 'fishing',
+      title: 'Fishing',
+      tagline: 'Guided casts, bait, and patient coaching for all ages.',
+      accent: '#8dd368',
+      media: [
+        { type: 'image', src: 'photos/captain-with-big-fish.jpg', alt: 'Captain holding a large fish' },
+        { type: 'image', src: 'photos/child-with-big-fish.jpg', alt: 'Child proudly holding a big catch' },
+        { type: 'image', src: 'photos/child-with-fishes.jpg', alt: 'Kid showing multiple fish' },
+        { type: 'image', src: 'photos/happy-kid-with-caught-fish.jpg', alt: 'Happy kid with caught fish' },
+        { type: 'image', src: 'photos/husband-wife-fighting-a-fish.jpg', alt: 'Couple reeling in a fish together' },
+        { type: 'image', src: 'photos/wife-posing-with-caught-fish.jpg', alt: 'Guest posing with a fresh catch' }
+      ]
+    },
+    {
+      id: 'boat',
+      title: 'Boat',
+      tagline: 'Clean, roomy, and camera-ready from every angle.',
+      accent: '#f97316',
+      media: [
+        { type: 'image', src: 'photos/boat-on-the-dessert-side-of-island.jpg', alt: 'Boat anchored by a sandy island' },
+        { type: 'image', src: 'photos/boat-side-shot-on-dessert-side.jpg', alt: 'Side shot of the boat by dunes' },
+        { type: 'image', src: 'photos/boat-side-shot2.jpg', alt: 'Bright side view of the boat' },
+        { type: 'image', src: 'photos/great-side-shot-of-docked-boat.jpg', alt: 'Docked boat ready for boarding' },
+        { type: 'image', src: 'photos/sideshot-of-boat.jpg', alt: 'Lean side profile of the boat' },
+        { type: 'image', src: 'photos/overhead-front-shot-of-boat-with-people.jpg', alt: 'Overhead front shot with guests' },
+        { type: 'image', src: 'photos/the-boat-overhead-shot.jpg', alt: 'Top-down capture of the boat' },
+        { type: 'video', src: 'photos/plane-close-fly-by.mp4', alt: 'Plane fly-by near the anchored boat' }
+      ]
+    },
+    {
+      id: 'captain',
+      title: 'The captain crew',
+      tagline: 'Local pros focused on safety, comfort, and good vibes.',
+      accent: '#c084fc',
+      media: [
+        { type: 'image', src: 'photos/beautiful-ladies-posing-with-captain.jpg', alt: 'Guests posing with the captain' },
+        { type: 'image', src: 'photos/beautiful-ladies-with-happy-captain.jpg', alt: 'Captain smiling with guests aboard' },
+        { type: 'image', src: 'photos/the-captain-in-heaven-with-insta-baddies.jpg', alt: 'Captain laughing with a group' },
+        { type: 'video', src: 'photos/drone-capture-of-boat-and-happy-captain.mp4', alt: 'Drone view with the captain waving' },
+        { type: 'image', src: 'photos/captain-with-big-fish.jpg', alt: 'Captain showing off a catch' },
+        { type: 'image', src: 'photos/beautiful-women-posing-on-front-of-boat.jpg', alt: 'Crew and guests at the bow' }
+      ]
+    },
+    {
+      id: 'instagram',
+      title: 'Instagram baddies',
+      tagline: 'Bold content moments with playful posing.',
+      accent: '#ec4899',
+      media: [
+        { type: 'image', src: 'photos/instagram-baddie-posing-in-white-bikini.jpg', alt: 'Stylish guest posing on deck' },
+        { type: 'image', src: 'photos/instagram-baddie-posing-with-drink.jpg', alt: 'Guest toasting with a drink' },
+        { type: 'image', src: 'photos/instagram-baddies-group-posing.jpg', alt: 'Group posing together on the boat' },
+        { type: 'image', src: 'photos/instagram-baddies-hanging-out-on-boat.jpg', alt: 'Group lounging on the boat' },
+        { type: 'image', src: 'photos/classy-lady-group-friends.jpg', alt: 'Stylish friends gathered on deck' },
+        { type: 'image', src: 'photos/smart-young-ladies-on-boat.jpg', alt: 'Friends smiling on the boat' },
+        { type: 'image', src: 'photos/beautiful-peaceful-young-woman-relaxing.jpg', alt: 'Guest relaxing peacefully' },
+        { type: 'image', src: 'photos/the-captain-in-heaven-with-insta-baddies.jpg', alt: 'Captain enjoying the moment with guests' }
+      ]
+    },
+    {
+      id: 'reviews',
+      title: 'Reviews',
+      tagline: 'Guests rave about the crew, comfort, and ease.',
+      accent: '#22d3ee',
+      media: [
+        { type: 'image', src: 'photos/Screenshot_20240901_074101_GetMyBoat.jpg', alt: 'Guest review screenshot praising the trip' },
+        { type: 'image', src: 'photos/Screenshot_20240928_120048_GetMyBoat.jpg', alt: 'Customer recommending the charter' },
+        { type: 'image', src: 'photos/Screenshot_20250228_210815_GetMyBoat.jpg', alt: 'Review highlighting the captain and crew' }
+      ]
+    },
+    {
+      id: 'parties',
+      title: 'Parties',
+      tagline: 'Birthdays, bachelorettes, and champagne cruising.',
+      accent: '#f472b6',
+      media: [
+        { type: 'image', src: 'photos/bachelorette-lady-on-boat.jpg', alt: 'Bachelorette guest celebrating on the boat' },
+        { type: 'image', src: 'photos/the-boat-docked-with-ballon-parties.jpg', alt: 'Boat decorated with balloons for a party' },
+        { type: 'image', src: 'photos/birthday-girl-with-cake.jpg', alt: 'Birthday cake on the boat' },
+        { type: 'image', src: 'photos/birthday-girl-posing-at-steering-wheel2.jpg', alt: 'Birthday guest at the helm' },
+        { type: 'image', src: 'photos/birthday-young-woman-posing-at-steering-wheel.jpg', alt: 'Birthday guest steering with a smile' },
+        { type: 'image', src: 'photos/young-woman-in-bathing-suit-with-birthyday-cake.jpg', alt: 'Birthday girl with cake and sunset' },
+        { type: 'image', src: 'photos/bridal-cake-on-boat.jpg', alt: 'Bridal cake set on the boat' },
+        { type: 'image', src: 'photos/4-tequila-shots-on-serving-plate.jpg', alt: 'Tequila shots ready to serve' },
+        { type: 'video', src: 'photos/friends-partying-on-boat.mp4', alt: 'Friends partying on the boat' },
+        { type: 'video', src: 'photos/young-friends-dancing-on-boat.mp4', alt: 'Friends dancing on the deck' },
+        { type: 'video', src: 'photos/man-jump-from-boat.mp4', alt: 'Guest jumping from the boat' },
+        { type: 'image', src: 'photos/man-jumping-from-boat.jpg', alt: 'Action shot of a jump from the boat' }
+      ]
+    },
+    {
+      id: 'intimate',
+      title: 'Intimate couple dates',
+      tagline: 'Quiet sandbar escapes and champagne sunsets.',
+      accent: '#94a3b8',
+      media: [
+        { type: 'image', src: 'photos/intimate-couple-date.jpg', alt: 'Couple enjoying a private moment on the boat' },
+        { type: 'image', src: 'photos/couple-in-water-with-floaty.jpg', alt: 'Couple relaxing in the water with a floaty' },
+        { type: 'image', src: 'photos/boat-with-sunset-behind-it.jpg', alt: 'Boat anchored for a sunset date' },
+        { type: 'image', src: 'photos/sunset-from-boat-side.jpg', alt: 'Soft sunset horizon for a date cruise' },
+        { type: 'image', src: 'photos/young-friend-on-floaty.jpg', alt: 'Lounging on a floaty near the boat' }
+      ]
+    }
+  ];
+
+  const reviewShots = [
+    'photos/Screenshot_20240724_185400_WhatsApp.jpg',
+    'photos/Screenshot_20240816_165318_GetMyBoat.jpg',
+    'photos/Screenshot_20240819_191819_GetMyBoat.jpg',
+    'photos/Screenshot_20240901_074101_GetMyBoat.jpg',
+    'photos/Screenshot_20240901_074114_GetMyBoat.jpg',
+    'photos/Screenshot_20240902_181104_GetMyBoat.jpg',
+    'photos/Screenshot_20240907_212705_GetMyBoat.jpg',
+    'photos/Screenshot_20240928_120048_GetMyBoat.jpg',
+    'photos/Screenshot_20240929_071533_GetMyBoat.jpg',
+    'photos/Screenshot_20240930_165216_GetMyBoat.jpg',
+    'photos/Screenshot_20241011_085336_GetMyBoat.jpg',
+    'photos/Screenshot_20250228_210815_GetMyBoat.jpg',
+    'photos/Screenshot_20251206_153404_Gallery.jpg'
+  ];
+
+  const categoryContainer = document.getElementById('category-sections');
+
+  const createMediaElement = (item) => {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'media-item';
+
+    if (item.type === 'video') {
+      const video = document.createElement('video');
+      video.src = mediaSrc(item.src);
+      video.controls = true;
+      video.muted = true;
+      video.loop = true;
+      video.playsInline = true;
+      video.setAttribute('aria-label', item.alt || 'Trip video');
+      wrapper.appendChild(video);
+      const tag = document.createElement('span');
+      tag.className = 'tag';
+      tag.textContent = 'Video';
+      wrapper.appendChild(tag);
+    } else {
+      const img = document.createElement('img');
+      img.src = mediaSrc(item.src);
+      img.alt = item.alt || 'Trip photo';
+      wrapper.appendChild(img);
+    }
+
+    return wrapper;
+  };
+
+  const createReviewHighlight = (src, index) => {
+    const reviewBlock = document.createElement('div');
+    reviewBlock.className = 'review-highlight';
+
+    const label = document.createElement('small');
+    label.textContent = `Guest review ${index + 1}`;
+    reviewBlock.appendChild(label);
+
+    const img = document.createElement('img');
+    img.src = mediaSrc(src);
+    img.alt = 'Guest review screenshot';
+    reviewBlock.appendChild(img);
+
+    const actions = document.createElement('div');
+    actions.className = 'hero-actions';
+    actions.style.marginTop = '4px';
+
+    const makeCta = (href, label, variant) => {
+      const link = document.createElement('a');
+      link.className = variant === 'ghost' ? 'button-ghost' : 'button';
+      link.href = href;
+      link.target = '_blank';
+      link.rel = 'noreferrer';
+
+      const icon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+      icon.setAttribute('class', 'icon');
+      icon.setAttribute('aria-hidden', 'true');
+      icon.setAttribute('viewBox', '0 0 24 24');
+      if (variant === 'ghost') {
+        icon.innerHTML = '<path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.35 3.608 1.325.975.975 1.262 2.242 1.324 3.608.058 1.266.069 1.646.069 4.85s-.011 3.584-.069 4.85c-.062 1.366-.35 2.633-1.324 3.608-.975.975-2.242 1.262-3.608 1.324-1.266.058-1.646.069-4.85.069s-3.584-.011-4.85-.069c-1.366-.062-2.633-.35-3.608-1.324-.975-.975-1.262-2.242-1.324-3.608C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.062-1.366.35-2.633 1.324-3.608.975-.975 2.242-1.262 3.608-1.324C8.416 2.175 8.796 2.163 12 2.163m0-2.163C8.741 0 8.332.014 7.052.072 5.775.13 4.638.428 3.678 1.388 2.718 2.347 2.42 3.484 2.362 4.761 2.304 6.041 2.29 6.45 2.29 12c0 5.55.014 5.959.072 7.239.058 1.277.356 2.414 1.316 3.373.96.96 2.097 1.258 3.373 1.316 1.28.058 1.689.072 7.239.072s5.959-.014 7.239-.072c1.277-.058 2.414-.356 3.373-1.316.96-.96 1.258-2.097 1.316-3.373.058-1.28.072-1.689.072-7.239s-.014-5.959-.072-7.239c-.058-1.277-.356-2.414-1.316-3.373-.96-.96-2.097-1.258-3.373-1.316C15.959.014 15.55 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 1 0-2.881 1.44 1.44 0 0 1 0 2.881z"/>';
+      } else {
+        icon.innerHTML = '<path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.672.15-.197.297-.77.966-.944 1.164-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.173.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.148-.672-1.611-.92-2.209-.242-.579-.487-.5-.672-.51l-.576-.01c-.198 0-.52.074-.793.372-.273.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.718 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.273-.198-.571-.347m-5.421 5.451h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.517-5.23c.002-5.45 4.436-9.884 9.888-9.884 2.64.001 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.9 6.994c-.002 5.45-4.436 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.158 11.89c0 2.096.547 4.14 1.588 5.945L0 24l6.305-1.654a11.86 11.86 0 0 0 5.733 1.463h.005c6.554 0 11.89-5.335 11.892-11.89a11.821 11.821 0 0 0-3.48-8.428"/>';
+      }
+      const text = document.createElement('span');
+      text.textContent = label;
+      link.appendChild(icon);
+      link.appendChild(text);
+      return link;
+    };
+
+    actions.appendChild(makeCta('https://wa.me/2976613950', 'WhatsApp booking', 'solid'));
+    actions.appendChild(makeCta('https://www.instagram.com/double_dd_adventures/', 'Instagram DM', 'ghost'));
+    reviewBlock.appendChild(actions);
+
+    return reviewBlock;
+  };
+
+  let reviewCursor = 0;
+
+  categories.forEach((category, index) => {
+    const card = document.createElement('section');
+    card.className = 'category-card';
+    card.id = category.id;
+
+    const top = document.createElement('div');
+    top.className = 'category-top';
+
+    const title = document.createElement('div');
+    title.className = 'category-title';
+
+    const pill = document.createElement('span');
+    pill.className = 'category-pill';
+    pill.style.background = category.accent;
+
+    const heading = document.createElement('h3');
+    heading.textContent = category.title;
+
+    const tagline = document.createElement('span');
+    tagline.textContent = category.tagline;
+
+    title.appendChild(pill);
+    title.appendChild(heading);
+    top.appendChild(title);
+    top.appendChild(tagline);
+    card.appendChild(top);
+
+    const grid = document.createElement('div');
+    grid.className = 'media-grid';
+    category.media.forEach((item) => grid.appendChild(createMediaElement(item)));
+    card.appendChild(grid);
+
+    categoryContainer.appendChild(card);
+
+    if (index < categories.length - 1) {
+      const reviewSrc = reviewShots[reviewCursor % reviewShots.length];
+      categoryContainer.appendChild(createReviewHighlight(reviewSrc, reviewCursor));
+      reviewCursor += 1;
+    }
+  });
+
+  const videoObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      const video = entry.target;
+      if (entry.isIntersecting) {
+        video.play().catch(() => {});
+      } else {
+        video.pause();
+      }
+    });
+  }, { threshold: 0.45 });
+
+  document.querySelectorAll('video').forEach((vid) => {
+    vid.muted = true;
+    vid.playsInline = true;
+    vid.autoplay = true;
+    videoObserver.observe(vid);
+  });
+</script>
+
+<?php get_footer(); ?>
