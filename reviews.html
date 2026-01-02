@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Double DD Adventures | Guest Reviews</title>
+  <meta name="description" content="Screenshots of real guest reviews for Double DD Adventures private boat charters.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <div class="brand">
+        <span class="dot" aria-hidden="true"></span>
+        Double DD Adventures
+      </div>
+      <div class="nav-links">
+        <a class="button-ghost" href="index.html">Back to experiences</a>
+        <a class="button" href="#reviews">Scroll reviews</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" style="padding-top: 24px;">
+      <div class="section-header">
+        <div>
+          <h2>Guest love in their own words</h2>
+          <p>Unedited screenshots from GetMyBoat, WhatsApp, and gallery shares.</p>
+        </div>
+        <a class="button-ghost" href="index.html">Book my trip</a>
+      </div>
+      <div class="hero-grid">
+        <div class="hero-headline">
+          <h1 style="margin-top:0; font-size: clamp(1.8rem, 2vw + 1rem, 2.4rem);">Transparent proof of smooth trips, happy families, and fire sunsets.</h1>
+          <p class="lead">Every screenshot below is saved locally in <code>photos/</code>. Scroll, zoom, and send them to your crew before you book.</p>
+          <div class="hero-actions">
+            <a class="button" href="index.html">See categories</a>
+            <a class="button-ghost" href="#reviews">Jump to reviews</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="panel">
+            <img src="photos/contact-about-info-grahic.jpg" alt="Contact and about info graphic">
+            <div class="chips">
+              <span class="chip">Screenshots only</span>
+              <span class="chip">Mobile-friendly grid</span>
+              <span class="chip">Shareable proof</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="section-header">
+        <div>
+          <h2>Full review wall</h2>
+          <p>Tap a screenshot to zoom on mobile—no external hosting required.</p>
+        </div>
+      </div>
+      <div class="reviews-grid" id="reviews-grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      Reviews load directly from <code>photos/</code>. No database or build step needed.
+    </div>
+  </footer>
+
+  <script>
+    const reviewShots = [
+      'photos/Screenshot_20240724_185400_WhatsApp.jpg',
+      'photos/Screenshot_20240816_165318_GetMyBoat.jpg',
+      'photos/Screenshot_20240819_191819_GetMyBoat.jpg',
+      'photos/Screenshot_20240901_074101_GetMyBoat.jpg',
+      'photos/Screenshot_20240901_074114_GetMyBoat.jpg',
+      'photos/Screenshot_20240902_181104_GetMyBoat.jpg',
+      'photos/Screenshot_20240907_212705_GetMyBoat.jpg',
+      'photos/Screenshot_20240928_120048_GetMyBoat.jpg',
+      'photos/Screenshot_20240929_071533_GetMyBoat.jpg',
+      'photos/Screenshot_20240930_165216_GetMyBoat.jpg',
+      'photos/Screenshot_20241011_085336_GetMyBoat.jpg',
+      'photos/Screenshot_20250228_210815_GetMyBoat.jpg',
+      'photos/Screenshot_20251206_153404_Gallery.jpg'
+    ];
+
+    const grid = document.getElementById('reviews-grid');
+
+    reviewShots.forEach((src, idx) => {
+      const card = document.createElement('div');
+      card.className = 'review-card';
+
+      const img = document.createElement('img');
+      img.src = src;
+      img.alt = `Guest review ${idx + 1}`;
+
+      card.appendChild(img);
+      grid.appendChild(card);
+    });
+  </script>
+</body>
+</html>
