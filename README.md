@@ -15,6 +15,10 @@ Instagram Booking: https://www.instagram.com/double_dd_adventures/
 
 The photos and videos are stored in the media folder with each media having a descriptive name. The reviews are prefixed with "Screenshot"
 
+## SEO Requirements
+
+The website shall reach people that are intending to do a vacation in Aruba. Most of Aruba's visitor originate from the United State, Europe and Latin America. A high ranking on Google, Trip Advisor is needed to drive higher bookings.
+
 ## Website requirements 
 
 * The primary goal of the website is to potential customer to book and/or inquire for services using either WhatsApp or Instagram.
@@ -34,6 +38,7 @@ The photos and videos are stored in the media folder with each media having a de
   * Intimate couple dates
 * The website shall be build so that it does not need to be compiled and can run as is locally and on other hosting platforms.
 * Inbetween each category, the website shall display a single review screenshot.
+* The website shall contain the necessary content required for SEO purposes without impeding on the user experience.
 
 ## Running the site
 
@@ -43,6 +48,6 @@ The site is fully static—no build steps or package installs required.
 * Open `reviews.html` for the full wall of customer-review screenshots.
 * All assets live in `photos/`, so you can serve locally with any static server (or double-click `index.html`).
 * Booking CTAs for WhatsApp and Instagram are surfaced in the header, hero, and review sections on both pages for quick conversion without clutter.
-
+* SEO: descriptive meta tags, Open Graph/Twitter cards, location/intent copy for Aruba boat charters, and JSON-LD structured data (LocalBusiness and ReviewCollection) are embedded in `index.html` and `reviews.html`.
 
 
