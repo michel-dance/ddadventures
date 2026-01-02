@@ -414,6 +414,25 @@
         reviewCursor += 1;
       }
     });
+
+    // Autoplay/pause videos when they enter/leave the viewport (where supported by the browser)
+    const videoObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const video = entry.target;
+        if (entry.isIntersecting) {
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+        }
+      });
+    }, { threshold: 0.45 });
+
+    document.querySelectorAll('video').forEach((vid) => {
+      vid.muted = true;
+      vid.playsInline = true;
+      vid.autoplay = true;
+      videoObserver.observe(vid);
+    });
   </script>
 </body>
 </html>
