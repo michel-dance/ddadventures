@@ -52,11 +52,8 @@ video {
 }
 
 .site-header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  backdrop-filter: blur(10px);
-  background: rgba(6, 20, 29, 0.75);
+  position: static;
+  background: rgba(6, 20, 29, 0.9);
   border-bottom: 1px solid var(--border);
 }
 
@@ -65,7 +62,7 @@ video {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 14px 0;
+  padding: 10px 0;
 }
 
 .brand {
@@ -89,6 +86,8 @@ video {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .button,
@@ -102,6 +101,9 @@ video {
   transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
   background: rgba(255, 255, 255, 0.04);
   color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .button:hover,
@@ -120,6 +122,13 @@ video {
 .button-ghost {
   background: rgba(255, 255, 255, 0.05);
   color: var(--text);
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  display: inline-block;
 }
 
 .hero {
