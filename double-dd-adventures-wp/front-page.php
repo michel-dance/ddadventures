@@ -118,7 +118,11 @@ $reviews_link = esc_url(home_url('/reviews/'));
 
 <script>
   const mediaBase = "<?php echo $media_base; ?>";
-  const mediaSrc = (path) => path.startsWith('http') ? path : (path.startsWith('photos/') ? mediaBase + path.replace(/^photos\\//, '') : mediaBase + path);
+  const mediaSrc = (path) => {
+    if (path.startsWith('http')) return path;
+    const cleaned = path.replace(/^photos\//, '');
+    return mediaBase + cleaned;
+  };
   const categories = [
     {
       id: 'sunsets',

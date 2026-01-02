@@ -68,7 +68,11 @@ $media_base = esc_url(dda_media_base_url());
 
 <script>
   const mediaBase = "<?php echo $media_base; ?>";
-  const mediaSrc = (path) => path.startsWith('http') ? path : (path.startsWith('photos/') ? mediaBase + path.replace(/^photos\\//, '') : mediaBase + path);
+  const mediaSrc = (path) => {
+    if (path.startsWith('http')) return path;
+    const cleaned = path.replace(/^photos\//, '');
+    return mediaBase + cleaned;
+  };
   const reviewShots = [
     'photos/Screenshot_20240724_185400_WhatsApp.jpg',
     'photos/Screenshot_20240816_165318_GetMyBoat.jpg',
