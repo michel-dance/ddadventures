@@ -51,3 +51,6 @@ The site is fully static—no build steps or package installs required.
 * SEO: descriptive meta tags, Open Graph/Twitter cards, location/intent copy for Aruba boat charters, and JSON-LD structured data (LocalBusiness and ReviewCollection) are embedded in `index.html` and `reviews.html`.
 
 
+## Google Search Console
+
+https://search.google.com/u/0/search-console?resource_id=https%3A%2F%2Fdd-adventures.com%2F
