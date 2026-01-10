@@ -9,6 +9,8 @@ $reviews_link = esc_url(home_url('/reviews/'));
 ?>
 
 <main>
+  <section class="hero-bg-strip" aria-hidden="true" style="background-image: url('<?php echo $media_base; ?>the-boat-overhead-shot.jpg');"></section>
+
   <section class="hero">
     <div class="wrap hero-grid">
       <div class="hero-headline">

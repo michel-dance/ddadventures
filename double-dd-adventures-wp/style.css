@@ -144,6 +144,14 @@ video {
   padding: 32px 0 16px;
 }
 
+.hero-bg-strip {
+  width: 100%;
+  height: clamp(260px, 24vw + 180px, 480px);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr;
